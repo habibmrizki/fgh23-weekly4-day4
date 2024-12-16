@@ -1,0 +1,85 @@
+/* Styling untuk div container */
+.qty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+/* Styling untuk div internal */
+.qty > div {
+  text-align: center;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling untuk paragraf angka */
+.qty p:first-of-type {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333333;
+  margin: 0 0 10px;
+}
+
+/* Styling tombol */
+.qty button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.qty button:hover {
+  background-color: #0056b3;
+}
+
+.qty button:active {
+  transform: scale(0.98);
+}
+
+/* Styling untuk pesan error */
+.qty p:last-of-type {
+  margin-top: 10px;
+  font-size: 0.875rem;
+  color: #ff0000;
+  display: none;
+}
+
+/* Tampilkan pesan error jika diperlukan */
+.qty .show-error {
+  display: block;
+}
+
+.parent,
+.children,
+.grandchildren {
+  padding: 10px;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.parent {
+  height: 200px;
+  background: #ff0000;
+}
+
+.children {
+  height: 50%;
+  width: 50%;
+  background: lightblue;
+}
+
+.grandchildren {
+  height: 50%;
+  width: 50%;
+  background: #007bff;
+}

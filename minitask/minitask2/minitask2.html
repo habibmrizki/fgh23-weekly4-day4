@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JSON Object URL-encoded</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      form {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>JSON Object Example</h1>
+    <form id="jsonForm" onsubmit="handleJsonSubmit(event)">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required /><br /><br />
+
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        required
+      /><br /><br />
+
+      <label for="country">Country:</label>
+      <input type="text" id="country" name="country" required /><br /><br />
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <h2>Submitted Data:</h2>
+    <pre id="output"></pre>
+
+    <script src="../minitask2/minitask2.js"></script>
+  </body>
+</html>
